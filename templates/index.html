@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chatbot</title>
+    <style>
+        body { font-family: Arial; max-width: 600px; margin: auto; padding: 20px; }
+        #chatbox { border: 1px solid #ccc; padding: 10px; height: 400px; overflow-y: scroll; }
+        #user-input { width: 80%; padding: 10px; }
+        #send-btn { padding: 10px; }
+        .user-msg { color: blue; }
+        .bot-msg { color: green; }
+    </style>
+</head>
+<body>
+    <h1>Chatbot</h1>
+    <div id="chatbox"></div>
+    <input type="text" id="user-input" placeholder="Type here..." />
+    <button id="send-btn">Send</button>
+
+    <script>
+        const input = document.getElementById("user-input");
+        const chatbox = document.getElementById("chatbox");
+        const sendBtn = document.getElementById("send-btn");
+
+        function appendMessage(sender, text) {
+            const msg = document.createElement("div");
+            msg.className = sender + "-msg";
+            msg.innerText = text;
+            chatbox.appendChild(msg);
+            chatbox.scrollTop = chatbox.scrollHeight;
+        }
+
+        sendBtn.onclick = async () => {
+            const userMsg = input.value;
+            if(!userMsg) return;
+            appendMessage("user", userMsg);
+            input.value = "";
+
+            const response = await fetch("/get", {
+                method: "POST",
+                headers: {"Content-Type": "application/x-www-form-urlencoded"},
+                body: `msg=${encodeURIComponent(userMsg)}`
+            });
+
+            const botReply = await response.text();
+            appendMessage("bot", botReply);
+        };
+
+        input.addEventListener("keypress", function(e) {
+            if (e.key === "Enter") sendBtn.click();
+        });
+    </script>
+</body>
+</html>

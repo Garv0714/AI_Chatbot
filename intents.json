@@ -1,0 +1,94 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "Hello", "Hey", "What's up?", "Good morning", "Good evening"],
+      "responses": ["Hello!", "Hey there, how can I help you?", "Hi, nice to see you!"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Good night", "Goodbye", "Catch you later"],
+      "responses": ["Goodbye!", "See you soon!", "Take care!", "Bye-bye!"]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks a lot", "Much appreciated"],
+      "responses": ["You're welcome!", "No problem!", "Glad I could help!", "Anytime!"]
+    },
+    {
+      "tag": "how_are_you",
+      "patterns": ["How are you?", "How's it going?", "Are you okay?", "What's up?"],
+      "responses": ["I'm doing great, thanks for asking!", "I'm good, how about you?", "All good here!"]
+    },
+    {
+      "tag": "name",
+      "patterns": ["What is your name?", "Who are you?", "Tell me your name"],
+      "responses": ["I'm your AI Chatbot.", "You can call me AI Assistant.", "I am a chatbot created for your internship task."]
+    },
+    {
+      "tag": "age",
+      "patterns": ["How old are you?", "What is your age?", "Are you young?"],
+      "responses": ["I don't have an age like humans.", "I'm as old as the code that runs me!", "Age doesn't matter for AI 😉"]
+    },
+    {
+      "tag": "weather",
+      "patterns": ["What's the weather?", "Is it raining?", "Tell me today's weather"],
+      "responses": ["I can't fetch live weather, but you can check a weather app.", "I don’t have weather data right now, sorry."]
+    },
+    {
+      "tag": "time",
+      "patterns": ["What time is it?", "Tell me the time", "Current time please"],
+      "responses": ["I can’t check live time right now, but your system clock can help!", "Please check the clock on your device."]
+    },
+    {
+      "tag": "study_help",
+      "patterns": ["How to prepare for exams?", "Give me study tips", "Best way to learn coding?", "Help me study"],
+      "responses": ["Study a little every day, not just before exams.", "Practice coding on platforms like GFG, LeetCode.", "Revise and take notes for quick review."]
+    },
+    {
+      "tag": "internship",
+      "patterns": ["Tell me about AI internship", "What is task 1?", "How to complete task 2?", "Internship details please"],
+      "responses": ["This internship has tasks like Chatbot with NLP, Image Captioning, etc.", "Task 1 is Chatbot with NLP, Task 2 is Image Captioning.", "I can guide you step by step."]
+    },
+    {
+      "tag": "funny",
+      "patterns": ["Tell me a joke", "Make me laugh", "Say something funny"],
+      "responses": ["Why don’t robots get tired? Because they recharge! 🤖⚡", "I told my computer I needed a break, and it froze. 😂"]
+    },
+    {
+      "tag": "ai_info",
+      "patterns": ["What is AI?", "Explain Artificial Intelligence", "Tell me about AI"],
+      "responses": ["AI means Artificial Intelligence — making machines think like humans.", "AI is the simulation of human intelligence by machines.", "AI powers chatbots, self-driving cars, and more."]
+    },
+    {
+      "tag": "creator",
+      "patterns": ["Who created you?", "Who made you?", "Who built this bot?"],
+      "responses": ["I was created by developers for an internship project.", "Some awesome coders built me!", "I exist thanks to my creators."]
+    },
+    {
+      "tag": "help",
+      "patterns": ["Can you help me?", "I need help", "Please assist me"],
+      "responses": ["Sure! What do you need help with?", "Of course, I’m here to assist you.", "Yes, tell me your problem."]
+    },
+    {
+      "tag": "jokes",
+      "patterns": ["Do you know any jokes?", "Say a joke", "Tell me something funny"],
+      "responses": ["Parallel lines have so much in common… it’s a shame they’ll never meet. 😂", "I would tell you a construction joke, but I’m still working on it."]
+    },
+    {
+      "tag": "motivation",
+      "patterns": ["Motivate me", "Give me motivation", "Say something inspiring"],
+      "responses": ["Don’t stop until you’re proud!", "Work hard in silence, let success make the noise.", "Every day is a new chance to grow!"]
+    },
+    {
+      "tag": "about_chatbot",
+      "patterns": ["What can you do?", "What are your features?", "How do you work?"],
+      "responses": ["I can chat with you, answer questions, and help with your internship tasks.", "I use NLP and AI to understand your queries.", "I’m a chatbot designed for conversation and guidance."]
+    },
+    {
+      "tag": "gratitude",
+      "patterns": ["I appreciate it", "You're so helpful", "Great help"],
+      "responses": ["Happy to help!", "Glad you find me useful.", "Always here for you."]
+    }
+  ]
+}
