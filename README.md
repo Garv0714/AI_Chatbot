@@ -25,8 +25,6 @@ AI_Chatbot/
 ├── .gitignore # Ignore large/unnecessary files
 ├── README.md # Project documentation
 
-yaml
-Copy code
 
 ---
 
@@ -85,10 +83,11 @@ Connect with external APIs for dynamic responses
 
 Deploy on Heroku / Render / AWS
 
-👨‍💻 Author
-Garv Sharma
-💡 Passionate about AI, Deep Learning & Real-World Projects
+## 👨‍💻 Author
+**Garv Sharma**  
 
-📫 Reach me on: GitHub
+📫 Reach me on:  
+- [![GitHub](https://img.shields.io/badge/GitHub-000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Garv0714)
 
 ⭐ If you like this project, don’t forget to star this repo!
+
